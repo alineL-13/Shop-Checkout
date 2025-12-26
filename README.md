@@ -30,4 +30,4 @@ This project is based on a coding challenge available on **devchallenges.io**.
 
 ## Live Demo
 
-https://github.com/alineL-13/Shop-Checkout
+[https://github.com/alineL-13/Shop-Checkout](https://alinel-13.github.io/Shop-Checkout/)
