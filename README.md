@@ -27,3 +27,7 @@ The main goal of this challenge was to practice layout structure, semantic HTML,
 ## Challenge Source
 
 This project is based on a coding challenge available on **devchallenges.io**.
+
+## Live Demo
+
+https://github.com/alineL-13/Shop-Checkout
