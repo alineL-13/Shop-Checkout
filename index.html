@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Device Shop Checkout</title>
+</head>
+<body>
+  <div class="background">
+    <div class="page-heading">
+      <h1 class="text-heading" style="margin-top: 45px;">Checkout</h1>
+      <p class="quant-items" style="margin-top: 45px;">3 Items</p>
+    </div>
+  </div>
+  <section class="container">
+    <section class="items-compra">
+      <div class="lista-items-compra">
+        <!-- Item 1 -->
+        <div class="card-item-compra">
+          <div class="card-item-coluna-img">
+            <div class="card-item-imagem">
+              <img src="/src/Gold@2x.png" alt="image-product">
+            </div>
+          </div>
+          <div class="item-compra-informacoes">
+            <p class="text-body-semibold">iPhone 12 Pro</p>
+            <p class="text-body-regular">Golden</p>
+            <br>
+            <p class="text-body-regular">x 1</p>
+          </div>
+          <div class="item-compra-preco">
+            <p class="text-body-semibold">$999.00</p>
+            <br>
+            <br>
+            <p class="text-body-regular">X</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="card-item-compra">
+          <div class="card-item-coluna-img">
+            <div class="card-item-imagem">
+              <img src="/src/Apple-watchx2.png" alt="image-product">
+            </div>
+          </div>
+          <div class="item-compra-informacoes">
+            <p class="text-body-semibold">Apple Watch</p>
+            <p class="text-body-regular">Blue</p>
+            <br>
+            <p class="text-body-regular">x 1</p>
+          </div>
+          <div class="item-compra-preco">
+            <p class="text-body-semibold">$399.00</p>
+            <br>
+            <br>
+            <p class="text-body-regular">X</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="card-item-compra">
+          <div class="card-item-coluna-img">
+            <div class="card-item-imagem">
+              <img src="/src/iMac@2x.png" alt="image-product">
+            </div>
+          </div>
+          <div class="item-compra-informacoes">
+            <p class="text-body-semibold">iMac</p>
+            <p class="text-body-regular">Green</p>
+            <br>
+            <p class="text-body-regular">x 1</p>
+          </div>
+          <div class="item-compra-preco">
+            <p class="text-body-semibold">$1199.00</p>
+            <br>
+            <br>
+            <p class="text-body-regular">X</p>
+          </div>
+        </div>
+      </div>
+      <div class="paying-information">
+          <div class="paying-information-code">
+            <input type="text" placeholder=" Enter coupon code">
+            <button style="width: 30%;">Apply Coupon</button>
+          </div>
+          <div class="paying-information-prices">
+            <div class="paying-information-prices-titles">
+              <p class="text-body-regular">Sub total</p>
+              <p class="text-body-regular">Tax</p>
+              <p class="text-body-medium">Total</p>
+            </div>
+            <div class="paying-information-prices-values">
+              <p class="text-body-regular">$2597.00</p>
+              <p class="text-body-regular">$623.28</p>
+              <p class="text-body-medium">$3220.28</p>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="container-contact-information">
+      <div class="items-contact-information">
+        <h4 class="text-body-semibold label">Contact Information</h4>
+        <div class="label-e-input-contact">
+          <p class="text-body-regular label">First & Last name</p>
+          <input type="text" placeholder=" Enter first & last name" class="information-input">
+        </div>
+        <div class="label-e-input-contact">
+          <p class="text-body-regular label">Email address</p>
+          <input type="email" placeholder=" Enter email address" class="information-input">
+        </div>
+        <div class="country-e-postal-code">
+          <div class="label-e-input-contact country-information">
+            <p class="text-body-regular label">Country</p>
+            <select id="select_country" name="select_country " class="information-input">
+              <option value="Finland" selected>Finland</option>
+              <option value="EUA">EUA</option>
+              <option value="Brazil">Brazil</option>
+            </select>
+          </div>
+          <div class="label-e-input-contact postal-code-information">
+            <p class="text-body-regular label">Postal Code</p>
+            <input type="text" placeholder=" 00270" class="information-input">
+          </div>
+        </div>
+        <button style="width: 100%; margin-top: 40px;">Continue</button>
+      </div>
+    </section>
+  </section>
+    
+</body>
+</html>

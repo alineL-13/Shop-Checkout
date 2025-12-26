@@ -1,0 +1,241 @@
+:root {
+  --color-text-primary: #1D1D1F;
+  --color-background-medium: #e6e7eb;
+  --color-border-light: #cbccce;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-text-primary);
+}
+
+/* Heading */
+.page-heading {
+  background: url(src/background-image@2x.png) no-repeat top;
+  background-size: cover;
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+  position: absolute;
+  z-index: 0;
+}
+
+.page-heading h1 {
+  color: white;
+}
+
+.page-heading .quant-items {
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  background-color: var(--color-text-primary);
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+/* Container */
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 75vh;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  box-shadow: 0px 4px 4px -1px rgba(17, 23, 41, 0.05);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+/* Container Items Compra */
+.items-compra {
+  width: 50%;
+  background-color: var(--color-background-medium);
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lista-items-compra {
+  height: 70%;
+  border-bottom: var(--color-border-light) solid 1px;
+  overflow-y: auto;
+  width: 90%;
+}
+
+.items-compra .lista-items-compra .card-item-compra {
+  margin: 15px 0px;
+  display: grid;
+  grid-template-columns: 2fr 6fr 2fr;
+  gap: 10px;
+}
+
+.items-compra .lista-items-compra .card-item-coluna-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-compra .lista-items-compra .card-item-imagem {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: var(--color-border-light) solid 1px;
+  border-radius: 10px;
+}
+
+.items-compra .lista-items-compra .card-item-imagem img {
+  width: 30px;
+  height: auto;
+}
+
+.items-compra .lista-items-compra .item-compra-preco {
+  text-align: end;
+}
+
+.items-compra .lista-items-compra .item-compra-preco p:last-child {
+  cursor: pointer;
+}
+
+.items-compra .paying-information {
+  height: 30%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.items-compra .paying-information-code {
+  display: flex;
+  gap: 10px;
+}
+
+.items-compra .paying-information-code input {
+  padding: 15px 0px;
+  width: 70%;
+  border: var(--color-border-light) solid 1px;
+  border-radius: 5px;
+}
+
+.items-compra .paying-information-prices {
+  display: flex;
+  justify-content: space-between;
+}
+
+.items-compra .paying-information .paying-information-prices-values p {
+  text-align: end;
+}
+
+/* Container Contact Information */
+.container-contact-information {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container-contact-information .items-contact-information {
+  width: 90%;
+}
+
+.container-contact-information .items-contact-information h4{
+  margin: 25px 0;
+}
+
+.container-contact-information .items-contact-information {
+  width: 90%; 
+}
+
+.container-contact-information .country-e-postal-code {
+  display: flex;
+  gap: 20px;
+}
+
+.container-contact-information .country-e-postal-code .country-information {
+  width: 60%;
+}
+
+.container-contact-information .country-e-postal-code .postal-code-information {
+  width: 40%;
+}
+
+/* Utilitários */
+.text-heading {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.text-body-semibold {
+  font-weight: 600;
+}
+
+.text-body-medium {
+  font-weight: 500;
+}
+
+.text-body-regular {
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.information-input {
+  padding: 15px;
+  border: var(--color-border-light) solid 1px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.label {
+  margin: 20px 0px 10px 0px;
+}
+
+button {
+  height: 50px;
+  background-color: var(--color-text-primary);
+  color: white;
+  border-radius: 10px;
+}
+
+/* Media Query */
+@media screen and (max-width: 640px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        width: 90vw;
+        top: 120px;
+        left: 50%;
+        transform: translateX(-50%); 
+        margin-top: 0;
+    }
+    
+    .page-heading {
+        position: relative;
+        height: 180px;
+    }
+    .items-compra, .container-contact-information {
+        width: 100%;
+        padding: 20px 0;
+    }
+    body {
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+}
